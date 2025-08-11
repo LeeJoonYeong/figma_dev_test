@@ -2,11 +2,15 @@
   "global": {},
   "Test/Mode 1": {
     "WHITE": {
-      "value": "#ffffff",
+      "value": "#c41c1c",
       "type": "color"
     },
     "BLACK": {
       "value": "#000000",
+      "type": "color"
+    },
+    "Blue": {
+      "value": "#1034aa",
       "type": "color"
     }
   },
