@@ -1,0 +1,20 @@
+{
+  "global": {},
+  "Variable collection/Mode 1": {
+    "WHITE": {
+      "value": "#ffffff",
+      "type": "color"
+    },
+    "BLACK": {
+      "value": "#ffffff",
+      "type": "color"
+    }
+  },
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      "global",
+      "Variable collection/Mode 1"
+    ]
+  }
+}
