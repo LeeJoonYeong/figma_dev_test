@@ -1,12 +1,12 @@
 {
   "global": {},
-  "Variable collection/Mode 1": {
+  "Test/Mode 1": {
     "WHITE": {
       "value": "#ffffff",
       "type": "color"
     },
     "BLACK": {
-      "value": "#ffffff",
+      "value": "#000000",
       "type": "color"
     }
   },
@@ -14,7 +14,7 @@
   "$metadata": {
     "tokenSetOrder": [
       "global",
-      "Variable collection/Mode 1"
+      "Test/Mode 1"
     ]
   }
 }
