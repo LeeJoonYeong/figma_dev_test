@@ -2,7 +2,7 @@
   "global": {},
   "Test/Mode 1": {
     "WHITE": {
-      "value": "#ffffff",
+      "value": "#fffffe",
       "type": "color"
     },
     "BLACK": {
