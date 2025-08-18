@@ -91,5 +91,8 @@ export default {
         }
       ]
     }
-  }
+  },
+  log: {
+    level: 'error', // 'warn' | 'info' | 'warn' | 'error' | 'silent'
+  },
 };
