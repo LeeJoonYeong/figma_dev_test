@@ -3,9 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>피그마 테스트</title>
+  <link rel="stylesheet" href="dist/css/tokens-root.css">
+  <link rel="stylesheet" href="dist/css/tokens-light.css">
+  <link rel="stylesheet" href="dist/css/tokens-dark.css">
+  <link rel="stylesheet" href="style.css">
+  <title>회의실 예약 메인보드</title>
 </head>
-<body>
-  <h1 class="title">피그마 테스트</h1>
+<body data-theme="light">
+  <div class="meeting_room_status_card">
+    <div class="title_box">
+      <strong class="title">Meeting Room 01</strong>
+      <span class="tag">회의중</span>
+    </div>
+    <div class="info_box">
+      <span class="team">VX Design</span>
+      <em class="time">13:30 ~ 16:30</em>
+    </div>
+  </div>
 </body>
 </html>

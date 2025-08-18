@@ -1,0 +1,96 @@
+# ----------------------------
+# Node.js / Package Managers
+# ----------------------------
+/node_modules
+.pnpm-debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ----------------------------
+# Build outputs (generic)
+# ----------------------------
+/dist
+/build
+/out
+**/*.map
+
+# ----------------------------
+# Style Dictionary outputs
+# (필요에 맞게 경로 조정)
+# ----------------------------
+/dist/css
+/dist/scss
+/dist/less
+/dist/json
+/build/android
+/build/ios
+# 만약 tokens 변환 산출을 별도 폴더에 모은다면:
+# /tokens/build
+# /tokens/dist
+
+# ----------------------------
+# Figma Tokens
+# ----------------------------
+# 토큰 원본(JSON)은 반드시 버전관리 대상!
+# 아래는 예시로 "자동 생성된 미러/캐시"만 제외하고 싶을 때 사용
+# (프로젝트 구조에 따라 주석 해제)
+# /tokens/.cache
+# /tokens/.export
+# /tokens/*.backup.json
+
+# ----------------------------
+# Framework / Bundler caches
+# ----------------------------
+.cache
+.parcel-cache
+.vite
+.next
+.nuxt
+.svelte-kit
+.storybook-cache
+.turbo
+
+# ----------------------------
+# Testing / Coverage
+# ----------------------------
+/coverage
+/.nyc_output
+
+# ----------------------------
+# Lint / Format caches
+# ----------------------------
+.eslintcache
+.stylelintcache
+
+# ----------------------------
+# Env / Secrets
+# ----------------------------
+.env
+.env.local
+.env.*.local
+.envrc
+
+# ----------------------------
+# OS / Editor junk
+# ----------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ----------------------------
+# IDE settings
+# ----------------------------
+.vscode/
+.idea/
+*.iml
+
+# ----------------------------
+# Hosting / CI (옵션)
+# ----------------------------
+.vercel
+.netlify
+# GitHub Actions 산출물 업로드 폴더를 로컬에 복사한다면:
+# /artifacts

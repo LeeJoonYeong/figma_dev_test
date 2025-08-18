@@ -1,7 +1,6 @@
-.title {
-    font-size: 14px;
-    font-weight: 500;
-    font-family: Pretendard;
-    font-style: normal;
-    
-}
+/* 미팅 룸 상태 컴포넌트 */
+.meeting_room_status_card { display: flex; flex-direction: column; width: max-content; padding: 24px; border: 2px solid transparent; border-radius: 28px; 
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, var(--color-light-color-red-60), color-mix(in srgb, var(--color-light-color-red-60) 40%, transparent)) border-box; }
+.meeting_room_status_card .title_box { display: flex; gap: 12px; align-items: center; }
+.meeting_room_status_card .title_box .title { display: flex; align-items: center; max-width: 210px; width: 210px; font-family: var(----global-title-t24-bold-fontfamily); font-size: var(--global-title-t24-bold-fontsize); font-weight: var(--global-title-t24-bold-fontweight); 
+    height: 28px; line-height: var(--global-title-t24-bold-lineheight); letter-spacing: var(--global-title-t24-bold-letterspacing);}

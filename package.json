@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@tokens-studio/sd-transforms": "^2.0.1",
+    "style-dictionary": "^5.0.1"
+  },
+  "scripts": {
+    "tokens:fix": "node scripts/fix-tokens.mjs",
+    "build:tokens": "npm run tokens:fix && style-dictionary build --config ./style-dictionary.config.mjs"
+  }
+}
