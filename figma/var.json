@@ -14,11 +14,51 @@
       "type": "color"
     }
   },
+  "primitives/Mode 1": {
+    "color": {
+      "red": {
+        "1": {
+          "value": "#990000",
+          "type": "color"
+        },
+        "2": {
+          "value": "#550000",
+          "type": "color"
+        },
+        "3": {
+          "value": "#220000",
+          "type": "color"
+        }
+      }
+    }
+  },
+  "semantic/Mode 1": {
+    "color": {
+      "bg": {
+        "button1": {
+          "value": "{color.red.1}",
+          "type": "color"
+        },
+        "button2": {
+          "value": "{color.red.2}",
+          "type": "color"
+        }
+      },
+      "text": {
+        "title": {
+          "value": "{color.red.3}",
+          "type": "color"
+        }
+      }
+    }
+  },
   "$themes": [],
   "$metadata": {
     "tokenSetOrder": [
       "global",
-      "Test/Mode 1"
+      "Test/Mode 1",
+      "primitives/Mode 1",
+      "semantic/Mode 1"
     ]
   }
 }
