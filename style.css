@@ -1,5 +1,5 @@
 /* 미팅 룸 상태 컴포넌트 */
-.meeting_room_status_card {
+.meeting-room-status {
     display: flex;
     flex-direction: column;
     gap: 18px;
@@ -10,13 +10,13 @@
     background: linear-gradient(white, white) padding-box, linear-gradient(to right, var(--color-light-color-red-60), color-mix(in srgb, var(--color-light-color-red-60) 40%, transparent)) border-box;
 }
 
-.meeting_room_status_card .title_box {
+.meeting-room-status__header {
     display: flex;
     gap: 12px;
     align-items: center;
 }
 
-.meeting_room_status_card .title_box .title {
+.meeting-room-status__title {
     display: flex;
     align-items: center;
     max-width: 210px;
@@ -29,7 +29,7 @@
     letter-spacing: var(--global-title-t24-bold-letterspacing);
 }
 
-.meeting_room_status_card .title_box .tag {
+.meeting-room-status__tag {
     background-color: var(--color-light-color-red-50);
     color: var(--color-light-color-gray-white);
     display: flex;
@@ -38,7 +38,7 @@
     border-radius: 85px;
 }
 
-.meeting_room_status_card .title_box .tag > span {
+.meeting-room-status__tag > span {
     font-family: var(--global-caption-cap14-bold-fontfamily);
     font-size: var(--global-caption-cap14-bold-fontsize);
     font-weight: var(--global-caption-cap14-bold-fontweight);
@@ -48,13 +48,13 @@
     text-align: center;
 }
 
-.meeting_room_status_card .info_box {
+.meeting-room-status__info {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.meeting_room_status_card .info_box .team {
+.meeting-room-status__team {
     font-family: var(--global-title-t20-bold-fontfamily);
     font-size: var(--global-title-t20-bold-fontsize);
     font-weight: var(--global-title-t20-bold-fontweight);
@@ -66,7 +66,7 @@
     max-width: 160px;
 }
 
-.meeting_room_status_card .info_box .time {
+.meeting-room-status__time {
     font-family: var(--global-title-t20-semi-bold-fontfamily);
     font-size: var(--global-title-t20-semi-bold-fontsize);
     font-weight: var(--global-title-t20-semi-bold-fontweight);

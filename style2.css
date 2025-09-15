@@ -1,0 +1,64 @@
+/* 기본 레이아웃 */
+html, body { margin: 0; padding: 0; }
+body { background-color: #ededed; font-family: Pretendard, system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans KR", Arial, sans-serif; color: #0e0d0d; }
+
+/* GNB */
+.gnb { background: #fff; height: 78px; display: flex; align-items: center; }
+.gnb__container { width: 1200px; max-width: 92vw; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+.gnb__brand { display: flex; align-items: center; gap: 12px; }
+.gnb__brand-dot { width: 24px; height: 24px; background: #5c8efa; border-radius: 50%; display: inline-block; }
+.gnb__team { font-weight: 600; font-size: 20px; letter-spacing: -0.4px; }
+.gnb__icon { width: 46px; height: 46px; border-radius: 99px; border: 1px solid #e4e3e3; background: #fff; }
+
+/* 페이지 컨테이너 */
+.page { width: 1200px; max-width: 92vw; margin: 24px auto 64px; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; grid-gap: 24px; }
+
+/* 회의실 카드 영역 */
+.meeting__row { display: flex; gap: 24px; }
+.meeting-card { display: flex; flex-direction: column; gap: 18px; width: 338px; padding: 24px; border: 2px solid transparent; border-radius: 28px; background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, var(--color-light-color-red-60, #ff3300), color-mix(in srgb, var(--color-light-color-red-60, #ff3300) 40%, transparent)) border-box; }
+.meeting-card--empty { background: linear-gradient(#fff, #fff) padding-box, linear-gradient(90deg, #ffffff, rgba(255,255,255,0.4)) border-box; border-color: #e4e3e3; }
+.meeting-card__header { display: flex; align-items: center; gap: 12px; }
+.meeting-card__title { font-weight: 700; font-size: 24px; letter-spacing: -0.48px; height: 28px; display: flex; align-items: center; }
+.meeting-card__tag { padding: 6px 14px; border-radius: 85px; font-weight: 700; font-size: 14px; min-width: 40px; text-align: center; }
+.meeting-card__tag--busy { background: #ff743f; color: #fff; }
+.meeting-card__tag--idle { background: #d3d2d2; color: #0e0d0d; }
+.meeting-card__info { display: flex; align-items: center; gap: 10px; }
+.meeting-card__team { font-weight: 700; font-size: 20px; color: #5c8efa; width: 160px; max-width: 160px; }
+.meeting-card__time { font-weight: 600; font-size: 20px; color: #ff743f; width: 120px; text-align: right; font-style: normal; }
+
+/* 공지 */
+.notice { grid-column: 1 / span 2; }
+.notice__title { font-weight: 700; font-size: 24px; margin: 12px 0; }
+.notice__box { background: #f6f6f6; border-radius: 28px; padding: 24px; }
+.notice__text { font-weight: 600; font-size: 16px; letter-spacing: -0.32px; line-height: 1.8; }
+
+/* 예약 섹션 */
+.reservations { grid-column: 1 / span 2; background: #fff; border-radius: 28px; padding: 24px; }
+.reservations__header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 16px; }
+.reservations__title { font-weight: 700; font-size: 24px; }
+.reservations__filter { display: flex; align-items: center; gap: 12px; }
+.select { display: flex; align-items: center; border: 1px solid #e4e3e3; border-radius: 8px; height: 46px; background: #fff; }
+.select__value { padding: 0 16px; font-size: 16px; }
+.select__btn { width: 46px; height: 46px; border-left: 1px solid #e4e3e3; background: #fff; }
+.button { height: 48px; padding: 0 16px; border: none; border-radius: 12px; font-weight: 600; font-size: 20px; }
+.button--primary { background: #ff743f; color: #fff; }
+
+.reservations__list { display: grid; gap: 16px; }
+.reservations__date { font-weight: 600; font-size: 20px; margin: 0 0 8px; }
+.reserve-card { background: #fff; border-radius: 16px; padding: 16px; display: grid; grid-template-columns: 6px 1fr; align-items: center; gap: 12px; border: 1px solid #e4e3e3; }
+.reserve-card__bar { width: 6px; height: 36px; border-radius: 18px; display: inline-block; }
+.reserve-card__bar--vx { background: #5c8efa; }
+.reserve-card__bar--ux { background: #afd045; }
+.reserve-card__bar--people { background: #ff43d0; }
+.reserve-card__line { display: grid; grid-template-columns: 160px 1fr auto; align-items: center; gap: 12px; }
+.reserve-card__team { font-size: 16px; font-weight: 700; }
+.reserve-card__team--vx { color: #5c8efa; }
+.reserve-card__team--ux { color: #afd045; }
+.reserve-card__team--people { color: #ff43d0; }
+.reserve-card__desc { font-size: 12px; color: #848484; }
+.reserve-card__time { font-size: 12px; font-weight: 700; color: #ff743f; }
+
+/* 유틸 */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,1px,1px); white-space: nowrap; border: 0; }
+
+

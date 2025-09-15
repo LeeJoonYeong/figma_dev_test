@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/css/tokens-root.css">
+  <link rel="stylesheet" href="dist/css/tokens-light.css">
+  <link rel="stylesheet" href="dist/css/tokens-dark.css">
+  <link rel="stylesheet" href="style2.css">
+  <title>회의실 예약 메인보드 (Figma Export)</title>
+</head>
+<body data-theme="light">
+  <header class="gnb">
+    <div class="gnb__container">
+      <div class="gnb__brand">
+        <span class="gnb__brand-dot" aria-hidden="true"></span>
+        <strong class="gnb__team">VX Design Team</strong>
+      </div>
+      <button class="gnb__icon" aria-label="메뉴"></button>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="meeting">
+      <div class="meeting__row">
+        <article class="meeting-card meeting-card--busy">
+          <div class="meeting-card__header">
+            <strong class="meeting-card__title">Meeting Room 01</strong>
+            <span class="meeting-card__tag meeting-card__tag--busy">회의중</span>
+          </div>
+          <div class="meeting-card__info">
+            <span class="meeting-card__team">VX Design</span>
+            <em class="meeting-card__time">13:30~16:30</em>
+          </div>
+        </article>
+
+        <article class="meeting-card meeting-card--empty">
+          <div class="meeting-card__header">
+            <strong class="meeting-card__title">Meeting Room 02</strong>
+            <span class="meeting-card__tag meeting-card__tag--idle">공실</span>
+          </div>
+          <div class="meeting-card__info">
+            <span class="meeting-card__team">VX Design</span>
+            <em class="meeting-card__time">13:30~16:30</em>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="notice">
+      <h2 class="notice__title">공지사항</h2>
+      <div class="notice__box">
+        <p class="notice__text">회의실 사용 후 화이트보드는 지워주세요.<br>블라인드를 올려주세요.<br>사용하신 자리는 깨끗이 정리해주세요.</p>
+      </div>
+    </section>
+
+    <section class="reservations">
+      <div class="reservations__header">
+        <h2 class="reservations__title">예약내역</h2>
+        <div class="reservations__filter">
+          <div class="select">
+            <span class="select__value">팀 전체</span>
+            <button class="select__btn" aria-label="필터 열기"></button>
+          </div>
+          <button class="button button--primary">예약하기</button>
+        </div>
+      </div>
+
+      <div class="reservations__list">
+        <div class="reservations__group">
+          <h3 class="reservations__date">2025.08.06 수요일</h3>
+          <div class="reserve-card">
+            <span class="reserve-card__bar reserve-card__bar--vx" aria-hidden="true"></span>
+            <div class="reserve-card__line">
+              <strong class="reserve-card__team reserve-card__team--vx">VX Design Team</strong>
+              <span class="reserve-card__desc">08월 16일 팀 주간회의 보고</span>
+              <em class="reserve-card__time">13:30~15:30</em>
+            </div>
+          </div>
+          <div class="reserve-card">
+            <span class="reserve-card__bar reserve-card__bar--ux" aria-hidden="true"></span>
+            <div class="reserve-card__line">
+              <strong class="reserve-card__team reserve-card__team--ux">UX Planning Team</strong>
+              <span class="reserve-card__desc">08월 16일팀 주간회의 보고</span>
+              <em class="reserve-card__time">13:30~15:30</em>
+            </div>
+          </div>
+          <div class="reserve-card">
+            <span class="reserve-card__bar reserve-card__bar--people" aria-hidden="true"></span>
+            <div class="reserve-card__line">
+              <strong class="reserve-card__team reserve-card__team--people">People</strong>
+              <span class="reserve-card__desc">08월 16일팀 주간회의 보고</span>
+              <em class="reserve-card__time">13:30~15:30</em>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
+
